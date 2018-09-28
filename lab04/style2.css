@@ -1,0 +1,27 @@
+/* numbered paragraphs */
+h3.numbered {counter-reset: mynum;}
+h3 {border-top: 1px solid gray;}
+
+p.numbered:before {
+    content: counter(mynum) ": ";
+    counter-increment: mynum;
+    font-weight: bold;
+}
+li {
+    list-style: lower-roman;
+    margin-bottom: 8px;
+}
+ul {
+    border: 10px solid lightblue;
+}
+
+ul, #numbered {
+    border: 1em solid #69b;
+    padding-right:1em;
+}
+ul, #numbered {float: left;}
+h3 {clear: left;}
+
+#demo-table tbody td {
+    border:1px solid #7a7;
+}
