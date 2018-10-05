@@ -1,84 +1,83 @@
-body {
-    font: 24px Helvetica;
-    background: #999999;
-}
+/* The variables that control the margins of the webpage */
+min_px = 0px
+max_px = 25px
+border = 0pt
+black = #000000
 
-#main {
-    min-height: 800px;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-flow: row;
-}
+body
+    font: 24px Helvetica
+    background: #999999
 
-#main > article {
-    margin: 0px;
-    padding: 25px;
-    border: 1px solid #000000;
-    border-radius: 0pt;
-    background: #dddd88;
-    flex: 3 1 60%;
-    order: 2;
-}
+/* Controls how the flexboxes are made and how they look */
 
-#main > nav {
-    margin: 0px;
-    padding: 25px;
-    border: 1px solid #000000;
-    border-radius: 0pt;
-    background: #ccccff;
-    flex: 1 6 20%;
-    order: 1;
-    text-align: right;
-}
+#main
+    min-height: 800px
+    margin: min_px
+    padding: min_px
+    display: flex
+    flex-flow: row
+    article
+        margin: min_px
+        padding: max_px
+        border: 1px solid black
+        border-radius: border
+        background: #dddd88
+        flex: 3 1 60%
+        order: 2
+    nav
+        margin: min_px
+        padding: max_px
+        border: 1px solid black
+        border-radius: border
+        background: #ccccff
+        flex: 1 6 20%
+        order: 1
+        text-align: right
+    aside
+        margin: min_px
+        padding: max_px
+        border: 1px solid black
+        border-radius: border
+        background: #ccccff
+        flex: 1 6 20%
+        order: 3
+        font-style: italic
 
-#main > aside {
-    margin: 0px;
-    padding: 25px;
-    border: 1px solid #000000;
-    border-radius: 0pt;
-    background: #ccccff;
-    flex: 1 6 20%;
-    order: 3;
-    font-style: italic;
-}
+header
+    display: block
+    margin: min_px
+    padding: max_px
+    min-height: 100px
+    border: 1px solid black
+    border-radius: border
+    background: #ffeebb
+    font-weight: bold
+    font-size: 40px
 
-header {
-    display: block;
-    margin: 0px;
-    padding: 25px;
-    min-height: 100px;
-    border: 1px solid #000000;
-    border-radius: 0pt;
-    background: #ffeebb;
-    font-weight: bold;
-    font-size: 40px;
-}
+footer
+    display: block
+    margin: min_px
+    padding: max_px
+    min-height: 100px
+    border: 1px solid black
+    border-radius: border
+    background: #ffeebb
+    font-weight: lighter
+    font-size: 15px
 
-footer {
-    display: block;
-    margin: 0px;
-    padding: 25px;
-    min-height: 100px;
-    border: 1px solid #000000;
-    border-radius: 0pt;
-    background: #ffeebb;
-    font-weight: lighter;
-    font-size: 15px;
-}
 
 /* Too narrow to support three columns */
-@media all and (max-width: 640px) {
-    #main, #page {
-        flex-direction: column;
-    }
-    
-    #main > nav, #main > aside, header, footer {
-        min-height: 50px;
-        max-height: 50px;
-    }
+@media all and (max-width: 640px)
+    #main, #page
+        flex-direction: column
 
-    #main > nav {
-        text-align: left;
-    }
-}
+    
+    #main > nav, #main > aside, header, footer
+        min-height: 50px
+        max-height: 50px
+
+
+    #main > nav
+        text-align: left
+
+

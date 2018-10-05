@@ -1,7 +1,9 @@
+/* The variables that control the margins of the webpage */
 body {
   font: 24px Helvetica;
   background: #999;
 }
+/* Controls how the flexboxes are made and how they look */
 #main {
   min-height: 800px;
   margin: 0px;
@@ -9,7 +11,7 @@ body {
   display: flex;
   flex-flow: row;
 }
-#main > article {
+#main article {
   margin: 0px;
   padding: 25px;
   border: 1px solid #000;
@@ -18,7 +20,7 @@ body {
   flex: 3 1 60%;
   order: 2;
 }
-#main > nav {
+#main nav {
   margin: 0px;
   padding: 25px;
   border: 1px solid #000;
@@ -28,7 +30,7 @@ body {
   order: 1;
   text-align: right;
 }
-#main > aside {
+#main aside {
   margin: 0px;
   padding: 25px;
   border: 1px solid #000;
