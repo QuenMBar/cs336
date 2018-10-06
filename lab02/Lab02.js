@@ -42,6 +42,8 @@ testPerson2.greeting();
 testPerson2.addFriend("Nott");
 testPerson2.newName("Toby");
 console.log(testPerson2.calcAge() >= testPerson1.calcAge());
+console.log(testPerson2.calcAge());
+
 
 function child(name, birthday, friends, subject) {
     person.call(name, birthday, friends);
