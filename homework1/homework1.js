@@ -10,16 +10,16 @@ function people(firstName, lastName, loginID, startDate) {
 }
 
 var allPeople = [
-    new people("Jim", "Sterling", "JS37", "10/24/1956"),
-    new people("Sara", "Jane", "SJ21", "10/24/1956"),
-    new people("Ozzy", "Winger", "OW02", "10/24/1956"),
-    new people("Lola", "Griff", "LG15", "10/24/1956"),
-    new people("Dona", "Fitzroy", "DF05", "10/24/1956"),
-    new people("Hank", "Grag", "HG01", "10/24/1956"),
-    new people("Harry", "Silvers", "HS06", "10/24/1956"),
-    new people("Kathy", "James", "KJ49", "10/24/1956"),
-    new people("Greg", "Harp", "GH68", "10/24/1956"),
-    new people("John", "Jackob", "JJ00", "10/24/1956"),
+    new people("Jim", "Sterling", "JS37", "7/23/1982"),
+    new people("Sara", "Jane", "SJ21", "4/15/1998"),
+    new people("Ozzy", "Winger", "OW02", "12/24/1956"),
+    new people("Lola", "Griff", "LG15", "1/05/2010"),
+    new people("Dona", "Fitzroy", "DF05", "8/27/1976"),
+    new people("Hank", "Grag", "HG01", "5/18/1982"),
+    new people("Harry", "Silvers", "HS06", "9/12/2000"),
+    new people("Kathy", "James", "KJ49", "3/25/1999"),
+    new people("Greg", "Harp", "GH68", "9/03/1967"),
+    new people("John", "Jackob", "JJ00", "11/13/1943"),
 ];
 
 people.prototype.getName = function () {
