@@ -1,0 +1,8 @@
+6.1
+A) The only method that one can do using Chrome is get.  There is no way to call the other methods using chrome.  All methods can be 
+called using curl though.  I was able to use the GET, HEAD, PUT, POST, DELETE methods with curl.
+B) The best response code for webpages that are not defined is a 400 error, bad request.
+
+6.2
+A) Forms support the post and get methods.  
+B) The HTML form gives the form data a name that the server can get the data from.  It is modified to have a type, id, and a name.
