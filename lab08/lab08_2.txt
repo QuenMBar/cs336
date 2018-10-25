@@ -1,0 +1,21 @@
+Answers to the reactJS lab questions. 
+a)
+	i. The component structure of the application has layers that can be rendered into HTML.  These layers can 
+	build off of eachother and offer a much more dynamic frontend.  React being composable means that it doesn't 
+	have to be built out of basic html, but it can return a tree of component layers.
+	ii.  JSX rewrites HTML tags based on the components that were created so global namespace doesn't get duplicates.
+	iii.  XSS is a security vulnerability where HTML code is injected into the server, and react protects against it 
+	because it doesn't generate HTML strings.  
+	iv.  The components are created in a tree, where it starts off with the most complex thing, in this case the 
+	comment box, and then adds the components that it needs, for example in this case that would be the comment 
+	list and comment form.  It then adds the components that those need, for example comment list needs the comment
+	component.
+	v.  Props are immutable, which means they can only be edited by the parent they are passed to, while states can be
+	edited by anyone.  These are both used to pass data between methods.
+b)
+	i.  If you add or remove a legal comment and save it, it will update the webpage with that comment.  If you add a 
+	illegal comment it just wont show any of the comments.
+	ii.  It calls render because it sets the polling rate for the server and converts some of the react code to 
+	something the server can read.
+	iii.  It helps it load faster because it doesn't have to grab the state of the view again.
+	iv.  If it decides the new comment is illegal then it will either crash or show nothing.
