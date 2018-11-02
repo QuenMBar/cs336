@@ -1,0 +1,6 @@
+	A project I could work on would be a website for textbook exchanging and selling between students.  This was an idea that 
+one person in my Software Engineering group had, but we ditched because making a log in system seemed too complicated for that 
+class.  However, I think that this could be a very good product if done correctly.  
+	It would be comprised of a home screen to explain what it is, and then links to a log in page.  From this, you would log 
+in and could access books being sold or put one up to be sold through a form.  Depending on the amount of time, stretch goals 
+would be making the log in more secure, and instead of having the data being stored in ram, put it on an external database server.  

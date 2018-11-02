@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>addPerson</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="addPerson.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="submit_script.js"></script>
+</head>
+<body>
+
+<form action="/newdata" method="post">
+    <div class="ui-widget">
+        <label for="firstName">First Name: </label>
+        <input type="text" id="firstName">
+    </div>
+    <div class="ui-widget">
+        <label for="lastName">Last Name: </label>
+        <input type="text" id="lastName">
+    </div>
+    <div class="ui-widget">
+        <label for="idNum">ID Number: </label>
+        <input type="text" id="idNum">
+    </div>
+    <div class="ui-widget">
+        <label for="startDate">Start Date: </label>
+        <input type="date" id="startDate">
+    </div>
+    <div class="button">
+        <z><button type="submit">Submit </button></z>
+    </div>
+</form>
+
+</body>
+</html>

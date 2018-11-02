@@ -1,6 +1,13 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+const app = express();
+const port = 3000;
+const HOST = "localhost";
+const http_status = require('http-status-codes');
+const bodyParser = require('body-parser');
+
+app.use(express.static('public'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 function people(firstName, lastName, loginID, startDate) {
     this.myfirstName = firstName;
@@ -36,6 +43,13 @@ people.prototype.calcAge = function () {
     }
     return age;
 }
+
+app.post('/newdata', function(req, res) {
+    console.log(req.body);
+    res.send(req.body.firstName);
+
+    // res.sendStatus(http_status.ACCEPTED);
+});
 
 app.get('/people/:id/years', function (req, res) {
     var i;
@@ -87,7 +101,7 @@ app.get('/people', function (req, res) {
     var i;
     let textNames = "|| ";
     for (i = 0; i < 10; i++) {
-        textNames = textNames + allPeople[i].getName() + "||";
+        textNames = textNames + allPeople[i].getName() + " || ";
     }
     res.json(textNames)
 })
