@@ -1,0 +1,29 @@
+What good has this bundling done? How big is the new bundle file? Check the Chrome DevTools network log to see what files are being loaded.
+	This new bundle is now the only file that is being sent to the client.  The file is 1312 kb and is polling the database every 2 seconds.
+
+What role did Babel play in the bundling?
+	Bable is what converted the react and css to the bundle.
+
+Can you just load file:///path…/index.html using the browser? Why or why not?
+	You can still access index.html dirtectly.  This is because the server is still serving them up, just not to the base route.
+
+In webpack.config.js, what does the loader test entry test: /\.jsx?$/ do?
+	It is the bable loader, and it excludes the node_modules.
+
+Check out the new dist/index.html and dist/bundle.js. How are they different from the previous versions?
+	Bundle.js and index.js seem to be the same as before.  They are very large files, so there is proably some change.
+
+What good is it to replace the CDN library loads with module imports?
+	Webpack likes the module imports better because that was how it was created.  It is more organized for webpack.
+
+Check the network log. How many of the new modules you built are being loaded? How about the CSS file?
+	Only the bundle file is being loaded in the network log. 
+
+Try out both ports and explain the difference between them.
+localhost:3001 — Try editing one of the React module files. Explain what happens, both to the displayed SPA webpage and to the bundle/index files.
+	The page updates when any changes are made to the react files.
+localhost:3000 — Try loading /api/comments. Explain what you get. Does the SPA page running on this port change (due to the edits made above) as well?
+	The comments update when a new one is added.
+
+Is it worth all this trouble to build a development configuration?
+	Yes, it makes it much easier to change things and see the results on the fly/

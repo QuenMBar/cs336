@@ -1,0 +1,20 @@
+Compare and contrast your development and production deployments and explain how each is designed.
+	Prduction doesnt have the dev plugin and had a few optimization plugins instead.
+
+List the optimizations you’ve configured for this production version and, if possible, find evidence of then in the deployed application files.
+	new webpack.optimize.OccurenceOrderPlugin(),
+        new webpack.optimize.UglifyJsPlugin(),
+
+	These are the 2 optimiztions.  There for turning the JS into more efficient code by condensing it into a form that 
+	is fuctional, just not very readable.
+
+What advantage is there is deploying an application to a PaaS tool like Heroku?
+	The app will always be running and with git it is easy to update it.  Heroku makes it so its easy to give your 
+	app a url that anyone can access.
+
+How does Heroku know how to install and run your application (after pulling it from the specified branch on GitHub)?
+	It know by looking at the package.json and the webpack.  Once it learns that NPM is being used, it uses the 
+	package.json to install and run the app.
+
+Include the URL of your deployed Heroku service here.
+	https://cs336quenmbar.herokuapp.com/
